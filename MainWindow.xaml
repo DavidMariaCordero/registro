@@ -1,0 +1,22 @@
+﻿<Window x:Class="registro.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:registro" mc:Ignorable="d" Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <!--ActorId-->
+            
+            <StackPanel Orientation="Horizontal"> 
+            <Label Content="ActorId:"/>
+            <TextBox x:Name="ActorIdTextBox" Text="{Binding ActorId}" Width = "85"/>
+            <Button x:Name = "BuscarButton" Content = "Buscar" Click = "BuscarButton_Click"/>
+            </StackPanel>
+            <!--Nombres-->
+            <Label Content="Nombres:"/>
+            <TextBox x:Name="NombresTextBox" Text="{Binding Nombres}"/>
+            <!--Salario-->
+            <Label Content="SalarioId:"/>
+            <TextBox x:Name="SalarioTextBox" Text="{Binding SalarioAnual}"/>
+            
+           <Button x:Name = "GuardarButton" Content = "Guardar" Click = "GuardarButton_Click"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>
